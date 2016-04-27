@@ -29,6 +29,7 @@ module MagicCloud
         Word.new(
           word,
           font_family: @options[:font_family] || DEFAULT_FAMILY,
+          font: @options[:font] || nil,
           font_size: scaler.call(word, size, i),
           color: palette.call(word, i),
           rotate: rotator.call(word, i)
